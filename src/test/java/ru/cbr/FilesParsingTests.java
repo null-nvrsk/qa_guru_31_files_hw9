@@ -2,11 +2,14 @@ package ru.cbr;
 
 import com.codeborne.pdftest.PDF;
 import com.codeborne.xlstest.XLS;
+import com.opencsv.CSVReader;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -68,6 +71,26 @@ public class FilesParsingTests {
                     .contains("ключевая ставка");
             assertThat(xls.excel.getSheet("2024").getRow(10).getCell(8).toString())
                     .isEqualTo("20.0");
+        }
+    }
+
+    @Test
+    @DisplayName("Проверка курса AUD на 10.2024")
+    void csvFileParsingTest() throws Exception {
+        try (InputStream is = extractFileFromZip("AUD_F01_10_2024_T31_10_2024.csv", "report.zip");
+             CSVReader csvReader = new CSVReader(new InputStreamReader(is), ';')) {
+            csvReader.skip(1);
+
+            List<String[]> data = csvReader.readAll();
+
+            assertThat(data)
+                    .hasSize(23)
+                    .allMatch(arr -> arr.length == 4)
+                    .anyMatch(arr -> arr[0].equals("1")
+                                  && arr[1].endsWith(".10.2024")
+                                  && arr[2].matches("\\d+,\\d{1,4}")
+                                  && arr[3].equals("Австралийский доллар")
+                    );
         }
     }
 }
