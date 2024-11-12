@@ -1,0 +1,493 @@
+{
+  "RawData": [
+    {
+      "colId": 35,
+      "element_id": 35,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 95100,
+      "rowId": 349,
+      "dt": "Январь 2021",
+      "periodicity": "month",
+      "date": "2021-02-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 36,
+      "element_id": 36,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 95100,
+      "rowId": 349,
+      "dt": "Январь 2021",
+      "periodicity": "month",
+      "date": "2021-02-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 40,
+      "element_id": 40,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 0,
+      "rowId": 349,
+      "dt": "Январь 2021",
+      "periodicity": "month",
+      "date": "2021-02-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 40,
+      "element_id": 40,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 0,
+      "rowId": 350,
+      "dt": "Февраль 2021",
+      "periodicity": "month",
+      "date": "2021-03-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 36,
+      "element_id": 36,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 144983,
+      "rowId": 350,
+      "dt": "Февраль 2021",
+      "periodicity": "month",
+      "date": "2021-03-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 35,
+      "element_id": 35,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 144983,
+      "rowId": 350,
+      "dt": "Февраль 2021",
+      "periodicity": "month",
+      "date": "2021-03-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 35,
+      "element_id": 35,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 178113,
+      "rowId": 351,
+      "dt": "Март 2021",
+      "periodicity": "month",
+      "date": "2021-04-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 36,
+      "element_id": 36,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 178113,
+      "rowId": 351,
+      "dt": "Март 2021",
+      "periodicity": "month",
+      "date": "2021-04-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 40,
+      "element_id": 40,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 0,
+      "rowId": 351,
+      "dt": "Март 2021",
+      "periodicity": "month",
+      "date": "2021-04-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 40,
+      "element_id": 40,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 1,
+      "rowId": 352,
+      "dt": "Апрель 2021",
+      "periodicity": "month",
+      "date": "2021-05-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 36,
+      "element_id": 36,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 191426,
+      "rowId": 352,
+      "dt": "Апрель 2021",
+      "periodicity": "month",
+      "date": "2021-05-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 35,
+      "element_id": 35,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 191427,
+      "rowId": 352,
+      "dt": "Апрель 2021",
+      "periodicity": "month",
+      "date": "2021-05-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 35,
+      "element_id": 35,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 148465,
+      "rowId": 353,
+      "dt": "Май 2021",
+      "periodicity": "month",
+      "date": "2021-06-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 36,
+      "element_id": 36,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 148464,
+      "rowId": 353,
+      "dt": "Май 2021",
+      "periodicity": "month",
+      "date": "2021-06-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 40,
+      "element_id": 40,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 1,
+      "rowId": 353,
+      "dt": "Май 2021",
+      "periodicity": "month",
+      "date": "2021-06-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 40,
+      "element_id": 40,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 3,
+      "rowId": 354,
+      "dt": "Июнь 2021",
+      "periodicity": "month",
+      "date": "2021-07-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 36,
+      "element_id": 36,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 178720,
+      "rowId": 354,
+      "dt": "Июнь 2021",
+      "periodicity": "month",
+      "date": "2021-07-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 35,
+      "element_id": 35,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 178723,
+      "rowId": 354,
+      "dt": "Июнь 2021",
+      "periodicity": "month",
+      "date": "2021-07-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 35,
+      "element_id": 35,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 151422,
+      "rowId": 355,
+      "dt": "Июль 2021",
+      "periodicity": "month",
+      "date": "2021-08-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 36,
+      "element_id": 36,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 151422,
+      "rowId": 355,
+      "dt": "Июль 2021",
+      "periodicity": "month",
+      "date": "2021-08-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 40,
+      "element_id": 40,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 0,
+      "rowId": 355,
+      "dt": "Июль 2021",
+      "periodicity": "month",
+      "date": "2021-08-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 40,
+      "element_id": 40,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 0,
+      "rowId": 356,
+      "dt": "Август 2021",
+      "periodicity": "month",
+      "date": "2021-09-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 36,
+      "element_id": 36,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 150792,
+      "rowId": 356,
+      "dt": "Август 2021",
+      "periodicity": "month",
+      "date": "2021-09-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 35,
+      "element_id": 35,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 150792,
+      "rowId": 356,
+      "dt": "Август 2021",
+      "periodicity": "month",
+      "date": "2021-09-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 35,
+      "element_id": 35,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 157725,
+      "rowId": 357,
+      "dt": "Сентябрь 2021",
+      "periodicity": "month",
+      "date": "2021-10-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 36,
+      "element_id": 36,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 157723,
+      "rowId": 357,
+      "dt": "Сентябрь 2021",
+      "periodicity": "month",
+      "date": "2021-10-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 40,
+      "element_id": 40,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 2,
+      "rowId": 357,
+      "dt": "Сентябрь 2021",
+      "periodicity": "month",
+      "date": "2021-10-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 40,
+      "element_id": 40,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 1,
+      "rowId": 358,
+      "dt": "Октябрь 2021",
+      "periodicity": "month",
+      "date": "2021-11-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 36,
+      "element_id": 36,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 161784,
+      "rowId": 358,
+      "dt": "Октябрь 2021",
+      "periodicity": "month",
+      "date": "2021-11-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 35,
+      "element_id": 35,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 161785,
+      "rowId": 358,
+      "dt": "Октябрь 2021",
+      "periodicity": "month",
+      "date": "2021-11-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 35,
+      "element_id": 35,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 157596,
+      "rowId": 359,
+      "dt": "Ноябрь 2021",
+      "periodicity": "month",
+      "date": "2021-12-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 36,
+      "element_id": 36,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 157595,
+      "rowId": 359,
+      "dt": "Ноябрь 2021",
+      "periodicity": "month",
+      "date": "2021-12-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 40,
+      "element_id": 40,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 1,
+      "rowId": 359,
+      "dt": "Ноябрь 2021",
+      "periodicity": "month",
+      "date": "2021-12-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 40,
+      "element_id": 40,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 1,
+      "rowId": 360,
+      "dt": "Декабрь 2021",
+      "periodicity": "month",
+      "date": "2022-01-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 36,
+      "element_id": 36,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 192410,
+      "rowId": 360,
+      "dt": "Декабрь 2021",
+      "periodicity": "month",
+      "date": "2022-01-01T00:00:00",
+      "digits": 0
+    },
+    {
+      "colId": 35,
+      "element_id": 35,
+      "measure_id": 22,
+      "unit_id": 7,
+      "obs_val": 192411,
+      "rowId": 360,
+      "dt": "Декабрь 2021",
+      "periodicity": "month",
+      "date": "2022-01-01T00:00:00",
+      "digits": 0
+    }
+  ],
+  "headerData": [
+    {
+      "id": 35,
+      "elname": "Всего"
+    },
+    {
+      "id": 36,
+      "elname": "В рублях"
+    },
+    {
+      "id": 40,
+      "elname": "В иностранной валюте"
+    }
+  ],
+  "units": [
+    {
+      "id": 1,
+      "val": "% годовых"
+    },
+    {
+      "id": 2,
+      "val": "%"
+    },
+    {
+      "id": 3,
+      "val": "млрд руб."
+    },
+    {
+      "id": 4,
+      "val": "млн долларов США"
+    },
+    {
+      "id": 5,
+      "val": "месяцев"
+    },
+    {
+      "id": 6,
+      "val": "млн руб."
+    },
+    {
+      "id": 7,
+      "val": "единиц"
+    }
+  ],
+  "DTRange": [
+    {
+      "FromY": 2019,
+      "ToY": 2024
+    }
+  ],
+  "SType": [
+    {
+      "sType": 1,
+      "dsName": "Количество кредитов",
+      "PublName": "По ипотечным жилищным кредитам"
+    }
+  ]
+}
