@@ -5,10 +5,9 @@ import com.codeborne.xlstest.XLS;
 import com.opencsv.CSVReader;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import ru.cbr.models.Root;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -16,6 +15,8 @@ import java.util.zip.ZipInputStream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class FilesParsingTests {
+
+    ObjectMapper objectMapper = new ObjectMapper();
 
     private final ClassLoader cl = FilesParsingTests.class.getClassLoader();
 
@@ -91,6 +92,34 @@ public class FilesParsingTests {
                                   && arr[2].matches("\\d+,\\d{1,4}")
                                   && arr[3].equals("Австралийский доллар")
                     );
+        }
+    }
+
+    @Test
+    void jsonFileParsingTest() throws Exception {
+        try (Reader reader = new InputStreamReader(
+                cl.getResourceAsStream("statistics-data-service.json")
+        )) {
+            File file = new File("statistics-data-service.json");
+
+
+            ObjectMapper om = new ObjectMapper();
+            Root root = objectMapper.readValue(file, Root.class);
+            Employee employee = objectMapper.readValue(employeeJson, Employee.class);
+            ObjectMapper om = new ObjectMapper();
+            Root root = om.readValue(myJsonString, Root.class);
+
+
+//            assertThat(actual.get("title").getAsString()).isEqualTo("example glossary");
+//
+//            assertThat(actual.get("Glossary").getAsJsonObject()
+//                    .get("title").getAsString())
+//                    .isEqualTo("S");
+//
+//            assertThat(actual
+//                    .get("GlossDiv").getAsJsonObject()
+//                    .get("flag").getAsBoolean())
+//                    .isTrue();
         }
     }
 }
