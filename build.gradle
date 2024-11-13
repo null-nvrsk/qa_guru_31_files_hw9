@@ -6,8 +6,7 @@ plugins {
 group = 'guru.qa'
 version = '1.0-SNAPSHOT'
 
-def selenideVersion = "7.5.1",
-    junitVersion = "5.11.3"
+def junitVersion = "5.11.3"
 
 repositories {
     mavenCentral()
@@ -19,13 +18,12 @@ compileTestJava {
 
 dependencies {
     testImplementation (
-            "com.codeborne:selenide:$selenideVersion",
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "org.slf4j:slf4j-simple:2.0.12",
             "com.codeborne:pdf-test:1.5.0",
             "com.codeborne:xls-test:1.4.3",
             "com.opencsv:opencsv:4.6",
-            "com.fasterxml.jackson.core:jackson-core:2.18.1",
+            "com.fasterxml.jackson.core:jackson-databind:2.18.1",
             "org.assertj:assertj-core:3.26.3"
     )
 }

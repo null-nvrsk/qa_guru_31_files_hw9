@@ -1,5 +1,6 @@
 package ru.cbr.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,12 +11,10 @@ import java.util.ArrayList;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Root {
+    public int sType;
+    public String dsName;
+    @JsonProperty("PublName")
+    public String publName;
     @JsonProperty("RawData")
     public ArrayList<RawDatum> rawData;
-    public ArrayList<HeaderDatum> headerData;
-    public ArrayList<Unit> units;
-    @JsonProperty("DTRange")
-    public ArrayList<DTRange> dTRange;
-    @JsonProperty("SType")
-    public ArrayList<SType> sType;
 }

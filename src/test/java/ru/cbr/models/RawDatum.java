@@ -2,7 +2,7 @@ package ru.cbr.models;
 
 import java.util.Date;
 
-public class RawDatum {
+public class RawDatum{
     public int colId;
     public int element_id;
     public int measure_id;
@@ -11,6 +11,5 @@ public class RawDatum {
     public int rowId;
     public String dt;
     public String periodicity;
-    public Date date;
-    public int digits;
+    public String date;
 }

@@ -2,12 +2,15 @@ package ru.cbr;
 
 import com.codeborne.pdftest.PDF;
 import com.codeborne.xlstest.XLS;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.opencsv.CSVReader;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.cbr.models.Root;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -96,30 +99,41 @@ public class FilesParsingTests {
     }
 
     @Test
+    @DisplayName("Проверка файла statistics-data-service.json")
     void jsonFileParsingTest() throws Exception {
-        try (Reader reader = new InputStreamReader(
-                cl.getResourceAsStream("statistics-data-service.json")
-        )) {
-            File file = new File("statistics-data-service.json");
+        try (InputStream is = cl.getResourceAsStream("statistics-data-service.json")) {
 
+            Root root = objectMapper.readValue(is, Root.class);
+            assertThat(root.sType).isEqualTo(1);
+            assertThat(root.dsName).isEqualTo("Количество кредитов");
+            assertThat(root.publName).isEqualTo("По ипотечным жилищным кредитам");
 
-            ObjectMapper om = new ObjectMapper();
-            Root root = objectMapper.readValue(file, Root.class);
-            Employee employee = objectMapper.readValue(employeeJson, Employee.class);
-            ObjectMapper om = new ObjectMapper();
-            Root root = om.readValue(myJsonString, Root.class);
+            assertThat(root.rawData).allMatch(item -> item.colId == 35);
+            assertThat(root.rawData).allMatch(item -> item.element_id == 35);
+            assertThat(root.rawData).allMatch(item -> item.measure_id == 22);
+            assertThat(root.rawData).allMatch(item -> item.unit_id == 7);
 
+            assertThat(root.rawData)
+                    .extracting("obs_val")
+                    .allMatch(value -> (int)value > 0);
 
-//            assertThat(actual.get("title").getAsString()).isEqualTo("example glossary");
-//
-//            assertThat(actual.get("Glossary").getAsJsonObject()
-//                    .get("title").getAsString())
-//                    .isEqualTo("S");
-//
-//            assertThat(actual
-//                    .get("GlossDiv").getAsJsonObject()
-//                    .get("flag").getAsBoolean())
-//                    .isTrue();
+            assertThat(root.rawData)
+                    .extracting("rowId")
+                    .allMatch(row -> (int)row > 0);
+
+            String dtPattern = "[a-zA-Zа-яА-ЯёЁ]+\\s\\d{4}";
+            assertThat(root.rawData)
+                    .extracting("dt")
+                    .allMatch(dt -> ((String) dt).matches(dtPattern));
+
+            assertThat(root.rawData)
+                    .extracting("periodicity")
+                    .contains("month");
+
+            String datePattern = "\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}";
+            assertThat(root.rawData)
+                    .extracting("date")
+                    .allMatch(val -> ((String) val).matches(datePattern));
         }
     }
 }
