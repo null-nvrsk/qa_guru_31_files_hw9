@@ -86,7 +86,7 @@ public class FilesParsingTests {
             assertThat(data)
                     .hasSize(23)
                     .allMatch(arr -> arr.length == 4)
-                    .anyMatch(arr -> arr[0].equals("1")
+                    .allMatch(arr -> arr[0].equals("1")
                                   && arr[1].endsWith(".10.2024")
                                   && arr[2].matches("\\d+,\\d{1,4}")
                                   && arr[3].equals("Австралийский доллар")
